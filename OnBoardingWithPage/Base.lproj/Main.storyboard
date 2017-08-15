@@ -1,26 +1,201 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="maw-5h-8Gd">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--On Boarding Pager-->
+        <scene sceneID="sbo-SC-ul4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="maw-5h-8Gd" customClass="OnBoardingPager" customModule="OnBoardingWithPage" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKY-QA-e01" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="104"/>
+        </scene>
+        <!--Step Zero-->
+        <scene sceneID="Xi1-8N-ToZ">
+            <objects>
+                <viewController storyboardIdentifier="StepZero" id="cXl-l2-5xB" customClass="StepZero" customModule="OnBoardingWithPage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="NFm-Y4-73a"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Q2-OV-ILe"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="0Tp-aK-JhO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="xsJ-ZB-wLq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bjl-SD-Erg">
+                                <rect key="frame" x="25" y="211" width="270" height="357"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6nt-fd-6uR">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WiDEA" translatesAutoresizingMaskIntoConstraints="NO" id="t10-zf-K6Z">
+                                                <rect key="frame" x="65" y="19" width="141" height="32"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="bsZ-jE-M5S"/>
+                                            <constraint firstAttribute="trailing" secondItem="t10-zf-K6Z" secondAttribute="trailing" constant="64" id="cdb-WD-gju"/>
+                                            <constraint firstAttribute="bottom" secondItem="t10-zf-K6Z" secondAttribute="bottom" constant="19" id="fiB-L6-YOS"/>
+                                            <constraint firstItem="t10-zf-K6Z" firstAttribute="leading" secondItem="6nt-fd-6uR" secondAttribute="leading" constant="65" id="hLo-eq-ir5"/>
+                                            <constraint firstItem="t10-zf-K6Z" firstAttribute="top" secondItem="6nt-fd-6uR" secondAttribute="top" constant="19" id="rgK-Ml-HRa"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-Kv-aDM">
+                                        <rect key="frame" x="0.0" y="70" width="270" height="287"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="287" id="Mex-ac-ter"/>
+                                        </constraints>
+                                        <string key="text">The ‘WiDEA’ is a combination word meaning ‘keyword + idea'.
+
+It is a way to develop ideas that are favorite used by CEO 'Masayoshi Son' of the world-famous Softbank of Japan.
+
+The two random words presented will help you to come up with your own ideas.
+
+Record new ideas associated with the suggested words.</string>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qen-Kv-aDM" firstAttribute="leading" secondItem="bjl-SD-Erg" secondAttribute="leading" id="sfV-l0-qTS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bjl-SD-Erg" firstAttribute="centerX" secondItem="0Tp-aK-JhO" secondAttribute="centerX" id="M3j-kY-d22"/>
+                            <constraint firstItem="bjl-SD-Erg" firstAttribute="leading" secondItem="0Tp-aK-JhO" secondAttribute="leadingMargin" constant="9" id="iaw-wC-Ov3"/>
+                            <constraint firstItem="8Q2-OV-ILe" firstAttribute="top" secondItem="bjl-SD-Erg" secondAttribute="bottom" id="qKk-to-Hvm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bjl-SD-Erg" secondAttribute="trailing" constant="9" id="sLA-73-DUZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aniBackground" destination="xsJ-ZB-wLq" id="cHR-RV-9YA"/>
+                        <outlet property="aniLogo" destination="t10-zf-K6Z" id="vE4-77-iOJ"/>
+                        <outlet property="aniText" destination="Qen-Kv-aDM" id="cwG-Nu-ISy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5M-wU-idL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121.25" y="185.91549295774649"/>
+        </scene>
+        <!--Step One-->
+        <scene sceneID="HLP-cC-ko9">
+            <objects>
+                <viewController storyboardIdentifier="StepOne" id="EsJ-py-4Wj" customClass="StepOne" customModule="OnBoardingWithPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hxw-fo-tWj"/>
+                        <viewControllerLayoutGuide type="bottom" id="3G9-vk-bQR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nIX-ab-WKy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScreenShotCut_01" translatesAutoresizingMaskIntoConstraints="NO" id="QjZ-Qd-dEt">
+                                <rect key="frame" x="35" y="118" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="LXE-Ir-BiP"/>
+                                    <constraint firstAttribute="width" constant="250" id="Nw5-b4-bCZ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-pZ-hxY">
+                                <rect key="frame" x="16" y="367" width="288" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="m7s-0n-Brv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdT-S1-IqH">
+                                <rect key="frame" x="16" y="368" width="288" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QN-Od-zJY">
+                                        <rect key="frame" x="40" y="20" width="209" height="54.5"/>
+                                        <string key="text">Swipe to change
+suggested keywords.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3QN-Od-zJY" firstAttribute="centerX" secondItem="gdT-S1-IqH" secondAttribute="centerX" id="BlY-8r-mk7"/>
+                                    <constraint firstAttribute="height" constant="200" id="cJK-9d-TaV"/>
+                                    <constraint firstItem="3QN-Od-zJY" firstAttribute="top" secondItem="gdT-S1-IqH" secondAttribute="top" constant="20" id="nlZ-K1-6Kc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gdT-S1-IqH" firstAttribute="top" secondItem="QjZ-Qd-dEt" secondAttribute="bottom" id="3MO-dy-q2W"/>
+                            <constraint firstItem="gdT-S1-IqH" firstAttribute="leading" secondItem="nIX-ab-WKy" secondAttribute="leadingMargin" id="3Nl-qA-Aft"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qSa-pZ-hxY" secondAttribute="trailing" id="Awc-dK-1Xh"/>
+                            <constraint firstItem="gdT-S1-IqH" firstAttribute="trailing" secondItem="nIX-ab-WKy" secondAttribute="trailingMargin" id="CXt-g8-gCT"/>
+                            <constraint firstItem="QjZ-Qd-dEt" firstAttribute="centerX" secondItem="nIX-ab-WKy" secondAttribute="centerX" id="JrE-8y-dEn"/>
+                            <constraint firstItem="3G9-vk-bQR" firstAttribute="top" secondItem="gdT-S1-IqH" secondAttribute="bottom" id="S4Q-lB-lp1"/>
+                            <constraint firstItem="gdT-S1-IqH" firstAttribute="top" secondItem="qSa-pZ-hxY" secondAttribute="bottom" id="lJH-kl-R1Z"/>
+                            <constraint firstItem="qSa-pZ-hxY" firstAttribute="leading" secondItem="nIX-ab-WKy" secondAttribute="leadingMargin" id="yZ4-Dm-TSA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aniDesc" destination="3QN-Od-zJY" id="DtU-uf-rXU"/>
+                        <outlet property="aniScreenShot" destination="QjZ-Qd-dEt" id="jyK-9k-QAY"/>
+                        <outlet property="screenBottom" destination="3MO-dy-q2W" id="u2M-ci-v2Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mux-Ar-IoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794.375" y="185.91549295774649"/>
+        </scene>
+        <!--Step Two-->
+        <scene sceneID="Oz9-rx-Icb">
+            <objects>
+                <viewController storyboardIdentifier="StepTwo" id="1HV-Gx-xyf" customClass="StepTwo" customModule="OnBoardingWithPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BMA-NA-cd3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Edc-pl-zVv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="geK-xE-UlI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용법 StepTwo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-rg-n22">
+                                <rect key="frame" x="103" y="273.5" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92455607650000005" green="0.74699449539999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5z5-rg-n22" firstAttribute="centerX" secondItem="geK-xE-UlI" secondAttribute="centerX" id="7Jw-zO-wk5"/>
+                            <constraint firstItem="5z5-rg-n22" firstAttribute="centerY" secondItem="geK-xE-UlI" secondAttribute="centerY" id="Cvd-Cq-WNQ"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hn-eV-XsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2544" y="186"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ScreenShotCut_01" width="432" height="433"/>
+        <image name="WiDEA" width="244" height="67"/>
+        <image name="main_bg" width="375" height="667"/>
+    </resources>
 </document>
