@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6736C681F43080800C681A1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6736C671F43080800C681A1 /* Helper.swift */; };
+		B6736C6A1F4313A000C681A1 /* StepThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6736C691F4313A000C681A1 /* StepThree.swift */; };
+		B6736C6C1F431B3200C681A1 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6736C6B1F431B3200C681A1 /* UIButtonX.swift */; };
+		B6736C6E1F431B6600C681A1 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6736C6D1F431B6600C681A1 /* DesignableButton.swift */; };
+		B6736C701F431BB100C681A1 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6736C6F1F431BB100C681A1 /* BounceButton.swift */; };
 		B6F9D1A81F4152BD0052A01F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9D1A71F4152BD0052A01F /* AppDelegate.swift */; };
 		B6F9D1AA1F4152BD0052A01F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9D1A91F4152BD0052A01F /* ViewController.swift */; };
 		B6F9D1AD1F4152BD0052A01F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F9D1AB1F4152BD0052A01F /* Main.storyboard */; };
@@ -20,7 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6736C671F43080800C681A1 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B6736C691F4313A000C681A1 /* StepThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepThree.swift; sourceTree = "<group>"; };
+		B6736C6B1F431B3200C681A1 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		B6736C6D1F431B6600C681A1 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		B6736C6F1F431BB100C681A1 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		B6F9D1A41F4152BD0052A01F /* OnBoardingWithPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBoardingWithPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F9D1A71F4152BD0052A01F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F9D1A91F4152BD0052A01F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,9 @@
 			children = (
 				B6F9D1A61F4152BD0052A01F /* OnBoardingWithPage */,
 				B6F9D1A51F4152BD0052A01F /* Products */,
+				B6736C6D1F431B6600C681A1 /* DesignableButton.swift */,
+				B6736C6B1F431B3200C681A1 /* UIButtonX.swift */,
+				B6736C6F1F431BB100C681A1 /* BounceButton.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,10 +76,10 @@
 				B6F9D1A71F4152BD0052A01F /* AppDelegate.swift */,
 				B6F9D1A91F4152BD0052A01F /* ViewController.swift */,
 				B6F9D1AB1F4152BD0052A01F /* Main.storyboard */,
-				B6736C671F43080800C681A1 /* Helper.swift */,
 				B6F9D1BB1F4154950052A01F /* StepZero.swift */,
 				B6F9D1BD1F41584E0052A01F /* StepOne.swift */,
 				B6F9D1BF1F41585E0052A01F /* StepTwo.swift */,
+				B6736C691F4313A000C681A1 /* StepThree.swift */,
 				B6F9D1B91F4153500052A01F /* OnboardingPager.swift */,
 				B6F9D1AE1F4152BD0052A01F /* Assets.xcassets */,
 				B6F9D1B01F4152BD0052A01F /* LaunchScreen.storyboard */,
@@ -153,11 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F9D1C01F41585E0052A01F /* StepTwo.swift in Sources */,
-				B6736C681F43080800C681A1 /* Helper.swift in Sources */,
 				B6F9D1AA1F4152BD0052A01F /* ViewController.swift in Sources */,
+				B6736C6E1F431B6600C681A1 /* DesignableButton.swift in Sources */,
 				B6F9D1BC1F4154950052A01F /* StepZero.swift in Sources */,
 				B6F9D1A81F4152BD0052A01F /* AppDelegate.swift in Sources */,
+				B6736C6C1F431B3200C681A1 /* UIButtonX.swift in Sources */,
+				B6736C701F431BB100C681A1 /* BounceButton.swift in Sources */,
 				B6F9D1BA1F4153500052A01F /* OnboardingPager.swift in Sources */,
+				B6736C6A1F4313A000C681A1 /* StepThree.swift in Sources */,
 				B6F9D1BE1F41584E0052A01F /* StepOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
